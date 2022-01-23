@@ -3,9 +3,13 @@ const InternalStyle = () => {
     color: "orange",
     fontSize: "2rem",
   };
+  const styleSalih = {
+    backgroundColor: "blue",
+  };
   return (
     <div style={styleParagraf}>
-      Hocam soyle somut projelerde gormek istiyor insan (Salih B)
+      Hocam soyle somut projelerde gormek istiyor insan{" "}
+      <span style={styleSalih}>(Salih B)</span>
     </div>
   );
 };
