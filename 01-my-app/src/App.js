@@ -9,6 +9,7 @@ import Jsx from "./components/jsx/Jsx";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
 import Shop from "./components/shop/Shop";
+import State from "./components/state/State";
 import ExternalStyle from "./components/style/ExternalStyle";
 import InlineStyle from "./components/style/InlineStyle";
 import InternalStyle from "./components/style/InternalStyle";
@@ -47,7 +48,8 @@ function App() {
       {/* <Image /> */}
       {/* <BSClassic /> */}
       {/* <BSReact/> */}
-      <Shop />
+      {/* <Shop /> */}
+      <State/>
     </div>
   );
 }
