@@ -3,6 +3,7 @@ import BSClassic from "./components/boostrap-classic/BSClassic";
 import BSReact from "./components/boostrap-react/BSReact";
 import Clock1 from "./components/clock1/Clock1";
 import Clock2 from "./components/clock2/Clock2";
+import Counter from "./components/counter/Counter";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
@@ -49,7 +50,8 @@ function App() {
       {/* <BSClassic /> */}
       {/* <BSReact/> */}
       {/* <Shop /> */}
-      <State/>
+      {/* <State/> */}
+      <Counter />
     </div>
   );
 }
