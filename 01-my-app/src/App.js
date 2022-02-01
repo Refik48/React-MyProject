@@ -1,8 +1,10 @@
 import React from "react";
+import Birthday from "./components/birthday/Birthday";
 import BSClassic from "./components/boostrap-classic/BSClassic";
 import BSReact from "./components/boostrap-react/BSReact";
 import Clock1 from "./components/clock1/Clock1";
 import Clock2 from "./components/clock2/Clock2";
+import Clock3 from "./components/clock3/Clock3";
 import Counter from "./components/counter/Counter";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
@@ -51,7 +53,10 @@ function App() {
       {/* <BSReact/> */}
       {/* <Shop /> */}
       {/* <State/> */}
-      <Counter />
+      {/* <Counter /> */}
+
+      {/* <Birthday/> */}
+      <Clock3 />
     </div>
   );
 }
