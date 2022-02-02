@@ -17,6 +17,8 @@ import ExternalStyle from "./components/style/ExternalStyle";
 import InlineStyle from "./components/style/InlineStyle";
 import InternalStyle from "./components/style/InternalStyle";
 import Test from "./components/test/Test";
+import ChangeTitle from "./components/useEffect/ChangeTitle";
+import UserCards from "./components/usercards/UserCards";
 
 function App() {
   const avatarUrl =
@@ -56,7 +58,9 @@ function App() {
       {/* <Counter /> */}
 
       {/* <Birthday/> */}
-      <Clock3 />
+      {/* <Clock3 /> */}
+      {/* <ChangeTitle /> */}
+      <UserCards/>
     </div>
   );
 }
