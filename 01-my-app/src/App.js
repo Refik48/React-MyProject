@@ -10,6 +10,7 @@ import Countries from "./components/countries/Countries";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
+import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
 import Shop from "./components/shop/Shop";
@@ -62,7 +63,8 @@ function App() {
       {/* <Clock3 /> */}
       {/* <ChangeTitle /> */}
       {/* <UserCards/> */}
-      <Countries />
+      {/* <Countries /> */}
+      <Posts />
     </div>
   );
 }
