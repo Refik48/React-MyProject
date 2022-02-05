@@ -6,6 +6,7 @@ import Clock1 from "./components/clock1/Clock1";
 import Clock2 from "./components/clock2/Clock2";
 import Clock3 from "./components/clock3/Clock3";
 import Counter from "./components/counter/Counter";
+import Countries from "./components/countries/Countries";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
@@ -60,7 +61,8 @@ function App() {
       {/* <Birthday/> */}
       {/* <Clock3 /> */}
       {/* <ChangeTitle /> */}
-      <UserCards/>
+      {/* <UserCards/> */}
+      <Countries />
     </div>
   );
 }
