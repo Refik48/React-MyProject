@@ -7,6 +7,7 @@ import Clock2 from "./components/clock2/Clock2";
 import Clock3 from "./components/clock3/Clock3";
 import Counter from "./components/counter/Counter";
 import Countries from "./components/countries/Countries";
+import Form1 from "./components/forms/Form1";
 import Hello from "./components/hello/Hello";
 import Image from "./components/image/Image";
 import Jsx from "./components/jsx/Jsx";
@@ -66,7 +67,8 @@ function App() {
       {/* <UserCards/> */}
       {/* <Countries /> */}
       {/* <Posts /> */}
-      <RandomImages/>
+      {/* <RandomImages/> */}
+      <Form1/>
     </div>
   );
 }
