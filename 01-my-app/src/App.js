@@ -13,6 +13,7 @@ import Jsx from "./components/jsx/Jsx";
 import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
+import RandomImages from "./components/randomImages/RandomImages";
 import Shop from "./components/shop/Shop";
 import State from "./components/state/State";
 import ExternalStyle from "./components/style/ExternalStyle";
@@ -64,7 +65,8 @@ function App() {
       {/* <ChangeTitle /> */}
       {/* <UserCards/> */}
       {/* <Countries /> */}
-      <Posts />
+      {/* <Posts /> */}
+      <RandomImages/>
     </div>
   );
 }

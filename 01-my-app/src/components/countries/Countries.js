@@ -33,7 +33,7 @@ const Countries = () => {
     axios("https://restcountries.com/v2/all")
       .then((resp) => {
         setCountries(resp.data);
-        //console.log(resp.data);
+        console.log(resp);
         setLoading(false);
       })
       .catch((err) => {
