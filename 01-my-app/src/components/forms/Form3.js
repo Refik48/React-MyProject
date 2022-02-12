@@ -26,6 +26,10 @@ const Form3 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // defoult olan davrasini engelle demek (butona bastigin zaman sunucuya gonderme davranisini)  js'de
+    if (!formData.ad) {
+      alert("Adinizi bos gecmeyiniz.");
+      return;
+    }
     setLoading(true);
     setMesaj("");
     setTimeout(() => {
@@ -39,7 +43,7 @@ const Form3 = () => {
         <Col md={5}>
           {mesaj && <Alert variant="info">{mesaj}</Alert>} // bu cok guzel bir
           ozellik..short..
-          <Form onSubmit={handleSubmit}>
+          <Form noValidate onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="ad">
               <Form.Label>Adiniz</Form.Label>
               <Form.Control

@@ -32,6 +32,8 @@ const Form2 = () => {
     e.preventDefault(); // defoult olan davrasini engelle demek (butona bastigin zaman sunucuya gonderme davranisini)  js'de
     setLoading(true);
     setMesaj("");
+
+    // Fake bir API YAPTIK
     setTimeout(() => {
       setMesaj("Bilgileriniz basarili bir sekilde gonderildi.");
       setLoading(false);
