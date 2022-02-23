@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 import Birthday from "./components/birthday/Birthday";
 import BSClassic from "./components/boostrap-classic/BSClassic";
 import BSReact from "./components/boostrap-react/BSReact";
@@ -18,6 +20,7 @@ import Posts from "./components/posts/Posts";
 import Profile from "./components/profile/Profile";
 import Props from "./components/props/Props";
 import RandomImages from "./components/randomImages/RandomImages";
+import Header from "./components/shared/Header";
 import Shop from "./components/shop/Shop";
 import State from "./components/state/State";
 import ExternalStyle from "./components/style/ExternalStyle";
@@ -26,6 +29,10 @@ import InternalStyle from "./components/style/InternalStyle";
 import Test from "./components/test/Test";
 import ChangeTitle from "./components/useEffect/ChangeTitle";
 import UserCards from "./components/usercards/UserCards";
+import Menu from "./components/shared/Menu";
+import HomePage from "./pages/HomePage";
+import BirthdayPage from "./pages/BirthdayPage";
+import BoostrapClassicPage from "./pages/BoostrapClassicPage";
 
 function App() {
   const avatarUrl =
@@ -74,7 +81,31 @@ function App() {
       {/* <Form1/> */}
       {/* <Form2/> */}
       {/* <Form3 /> */}
-      <Form4/>
+      {/* <Form4/> */}
+
+      <Router>
+        <Header />
+        <Container>
+          <Row>
+            <Col md={4}>
+              <Menu />
+            </Col>
+            <Col md={8}>
+              <Switch>
+                <Route path="/bs-classic">
+                  <BoostrapClassicPage />
+                </Route>
+                <Route path="/birthday">
+                  <BirthdayPage />
+                </Route>
+                <Route to="/">
+                  <HomePage />
+                </Route>
+              </Switch>
+            </Col>
+          </Row>
+        </Container>
+      </Router>
     </div>
   );
 }
