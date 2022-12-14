@@ -7,10 +7,10 @@ const Clock1 = () =>{
 
  return (
    <div className="clock-container">
-     <div className="clock"></div>
+     <div className="clock">20:11</div>
      <div>
-       <div className="date"></div>
-       <div className="day"></div>
+       <div className="date">AUGUST 13,2021</div>
+       <div className="day">FRIDAY EVENING</div>
      </div>
    </div>
  );
