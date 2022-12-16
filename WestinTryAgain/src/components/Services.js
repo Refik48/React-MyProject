@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionTitle from './Component/SectionTitle'
+import Service from './Component/Service'
 const Services = () => {
   return (
     <section id="services" class="services-02 py-6 bg-grey">
@@ -12,28 +13,19 @@ const Services = () => {
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <!-- Item 01 -->
+                    
                     <div class="col-md-6 col-lg-4">
-                        <div class="services-box">
-                            <img src="assets/img/art-design.svg" alt="/">
-                            <div class="services-content">
-                                <h5 class="services-head">Graphic Design</h5>
-                                <p class="services-description mb-0">specialise in Graphic design Whether you need to create a new website or updat.</p>
-                            </div>
-                        </div>
+                    <Service resim="assets/img/art-design.svg" baslik="Graphic Design" aciklama="specialise in Graphic design Whether you need to create a new website or updat."/>
+                        
                     </div>
-                    <!-- Item 02 -->
+                   
                     <div class="col-md-6 col-lg-4">
-                        <div class="services-box">
-                            <img src="assets/img/web-design.svg" alt="/">
-                            <div class="services-content">
-                                <h5 class="services-head">Web Design</h5>
-                                <p class="services-description mb-0">design, build & maintain websites that keep pace with our digital world.</p>
-                            </div>
-                        </div>
+                    <Service resim="assets/img/web-design.svg" baslik="Web Design" aciklama="design, build & maintain websites that keep pace with our digital world."/>
+                        
                     </div>
-                    <!-- Item 03 -->
+                    {/* <!-- Item 03 --> */}
                     <div class="col-md-6 col-lg-4">
+                    <Service resim="" baslik="" aciklama=""/>
                         <div class="services-box">
                             <img src="assets/img/portfolio.svg" alt="/">
                             <div class="services-content">
@@ -42,8 +34,9 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <!-- Item 04 -->
+                    {/* <!-- Item 04 --> */}
                     <div class="col-md-6 col-lg-4">
+                    <Service resim="" baslik="" aciklama=""/>
                         <div class="services-box">
                             <img src="assets/img/musical-notes.svg" alt="/">
                             <div class="services-content">
@@ -52,8 +45,9 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <!-- Item 05 -->
+                    {/* <!-- Item 05 --> */}
                     <div class="col-md-6 col-lg-4">
+                    <Service resim="" baslik="" aciklama=""/>
                         <div class="services-box">
                             <img src="assets/img/website.svg" alt="/">
                             <div class="services-content">
@@ -62,8 +56,9 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <!-- Item 06 -->
+                    {/* <!-- Item 06 --> */}
                     <div class="col-md-6 col-lg-4">
+                    <Service resim="" baslik="" aciklama=""/>
                         <div class="services-box">
                             <img src="assets/img/brand-awareness.svg" alt="/">
                             <div class="services-content">
