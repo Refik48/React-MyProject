@@ -21,15 +21,13 @@ const BlogItem = (props) => {
           <li className="list-inline-item">
             <a href="#">
               <i className="fas fa-comment base-color"></i>
-              <span>5</span>
+              <span>{props.yorum}</span>
             </a>
           </li>
         </ul>
-        <p className="mb-0">
-          {props.yorum}
-        </p>
+        <p className="mb-0">{props.mesaj}</p>
         <div className="blog-link">
-          <a href="blog-single-colorfull.html.htm">{props.mesaj}</a>
+          <a href="#">Read More...</a>
         </div>
       </div>
     </div>

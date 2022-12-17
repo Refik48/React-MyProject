@@ -12,32 +12,38 @@ const Blog = () => {
           </div>
         </div>
         <div className="row mt-3">
-          <BlogItem
-            resim="assets/img/blog-img-01.png"
-            tarih="22th may"
-            baslik="Write Your Dreams"
-            isim="Jone Doe"
-            yorum="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
-            mesaj="Read More..."
-          />
+          <div class="col-md-6 col-lg-4">
+            <BlogItem
+              resim="assets/img/blog-img-01.png"
+              tarih="22th may"
+              baslik="Write Your Dreams"
+              isim="Jone Doe"
+              yorum="5"
+              mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
+            />
+          </div>
 
-          <BlogItem
-            resim="assets/img/blog-img-02.png"
-            tarih="12th june"
-            baslik="Enjoy Your Happy Life"
-            isim="Jone Doe"
-            yorum="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
-            mesaj="Read More..."
-          />
+          <div class="col-md-6 col-lg-4">
+            <BlogItem
+              resim="assets/img/blog-img-02.png"
+              tarih="12th june"
+              baslik="Enjoy Your Happy Life"
+              isim="Jone Doe"
+              yorum="2"
+              mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
+            />
+          </div>
 
-          <BlogItem
-            resim="assets/img/blog-img-03.png"
-            tarih="25th Nov"
-            baslik="Beautiful Life"
-            isim="Jone Doe"
-            yorum="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
-            mesaj="Read More..."
-          />
+          <div class="col-md-6 col-lg-4">
+            <BlogItem
+              resim="assets/img/blog-img-03.png"
+              tarih="25th Nov"
+              baslik="Beautiful Life"
+              isim="Jone Doe"
+              yorum="2"
+              mesaj="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod."
+            />
+          </div>
         </div>
       </div>
     </section>
