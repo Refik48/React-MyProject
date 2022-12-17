@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SectionTitle = (props) => {
   return (
@@ -8,6 +8,6 @@ const SectionTitle = (props) => {
       <span>{props.baslik}</span>
     </div>
   );
-}
+};
 
-export default SectionTitle
+export default SectionTitle;
