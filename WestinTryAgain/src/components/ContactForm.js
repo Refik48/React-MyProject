@@ -32,6 +32,7 @@ const ContactForm = () => {
                                             </div>
                                         </div>
                                         <div className="col-sm-12 text-left">
+                                        
                                             <a href="#" className="pill-button-01" id="submit-btn" onclick="sendEmail()">Send Message</a>
                                             <div id="message" className="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
                                                 <div className="toast-body d-inline-block"></div>
