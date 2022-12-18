@@ -17,7 +17,7 @@ const Contact = () => {
             <ContactItem
               resim="assets/img/message.svg"
               baslik="Mail Me"
-              aciklama="info@westn.com"
+              aciklama="info@westin.com"
             />
           </div>
 
