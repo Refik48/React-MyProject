@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio.js";
 import Testimonal from "./components/Testimonal.js";
 import Blog from "./components/Blog.js";
 import Contact from "./components/Contact.js";
+import Footer from "./components/Footer.js";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Testimonal />
       <Blog />
       <Contact/>
+      <Footer/>
     </div>
   );
 };
