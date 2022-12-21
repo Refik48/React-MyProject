@@ -19,7 +19,9 @@ const following = props.following;
 
   return (
     <div className="person-card">
-      <div className="person-bg"></div>
+      <div className="person-bg" style={{ backgroundImage: `url(${avatar})` }}>
+        <div className="person-bg-transparent"></div>
+      </div>
       <div className="person-content">
         <div className="person-avatar">
           <img src={avatar} alt={name} />
