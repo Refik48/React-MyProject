@@ -28,14 +28,24 @@ function App() {
       <Clock2 yaziRengi="yellow" zeminRengi="navy" />
       <Clock2 yaziRengi="whitw" zeminRengi="black" />
       <Clock2 yaziRengi="yellow" zeminRengi="red" /> */}
-      <Profile
-        avatar={avatarUrl}
-        name="Ali Gel"
-        location="Turkiye,Istanbul"
-        shot="4"
-        followers="25"
-        following="45"
-      />
+      <div style={{display: "flex", justifyContent:"space-evenly"}}>
+        <Profile
+          avatar={avatarUrl}
+          name="Ali Gel"
+          location="Turkiye,Istanbul"
+          shot="4"
+          followers="25"
+          following="45"
+        />
+        <Profile
+          avatar="https://images.unsplash.com/photo-1601572420755-16a9f0677102?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+          name="Mehmet Gel"
+          location="Turkiye, Izmir"
+          shot="43"
+          followers="123"
+          following="4545"
+        />
+      </div>
     </div>
   );
 }
