@@ -1,8 +1,9 @@
 import React from "react";
-import BSClassic from "./components/boostrap-classic/BSClassic";
-import BSReact from "./components/boostrap-react/BSReact";
-// import Clock2 from "./components/clock2/Clock2";
-import Profile from "./components/profile/Profile";
+// import BSClassic from "./components/boostrap-classic/BSClassic";
+// import BSReact from "./components/boostrap-react/BSReact";
+// // import Clock2 from "./components/clock2/Clock2";
+// import Profile from "./components/profile/Profile";
+import Shop from "./components/shop/Shop";
 
 // import Clock1 from "./components/clock1/Clock1";
 // import Props from "./components/props/Props";
@@ -52,8 +53,10 @@ function App() {
 
 
 <BSClassic/>
-*/}
+
 <BSReact/>
+*/}
+<Shop/>
     </div>
   );
 }
