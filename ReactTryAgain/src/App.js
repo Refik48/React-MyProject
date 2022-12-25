@@ -1,4 +1,5 @@
 import React from "react";
+import BSClassic from "./components/boostrap-classic/BSClassic";
 // import Clock2 from "./components/clock2/Clock2";
 import Profile from "./components/profile/Profile";
 
@@ -27,7 +28,7 @@ function App() {
       <Clock1/>
       <Clock2 yaziRengi="yellow" zeminRengi="navy" />
       <Clock2 yaziRengi="whitw" zeminRengi="black" />
-      <Clock2 yaziRengi="yellow" zeminRengi="red" /> */}
+      <Clock2 yaziRengi="yellow" zeminRengi="red" /> 
       <div style={{display: "flex", justifyContent:"space-evenly"}}>
         <Profile
           avatar={avatarUrl}
@@ -45,9 +46,11 @@ function App() {
           followers="123"
           following="4545"
         />
+        
       </div>
+*/}
 
-      
+<BSClassic/>
     </div>
   );
 }
