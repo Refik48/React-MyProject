@@ -3,7 +3,8 @@ import React from "react";
 // import BSReact from "./components/boostrap-react/BSReact";
 // // import Clock2 from "./components/clock2/Clock2";
 // import Profile from "./components/profile/Profile";
-import Shop from "./components/shop/Shop";
+// import Shop from "./components/shop/Shop";
+import State from "./components/state/State";
 
 // import Clock1 from "./components/clock1/Clock1";
 // import Props from "./components/props/Props";
@@ -55,8 +56,10 @@ function App() {
 <BSClassic/>
 
 <BSReact/>
-*/}
+
 <Shop/>
+*/}
+<State/>
     </div>
   );
 }
