@@ -1,5 +1,6 @@
 import React from "react";
-import Counter from "./components/counter/Counter";
+import Birthday from "./components/birthday/Birthday";
+// import Counter from "./components/counter/Counter";
 // import BSClassic from "./components/boostrap-classic/BSClassic";
 // import BSReact from "./components/boostrap-react/BSReact";
 // // import Clock2 from "./components/clock2/Clock2";
@@ -61,8 +62,10 @@ function App() {
 <Shop/>
 
 <State/>
-*/}
+
 <Counter/>
+*/}
+<Birthday/>
     </div>
   );
 }
