@@ -11,6 +11,7 @@ const ChangeTitle = () => {
   }, [sayac]);
   return (
     <div>
+    //?  <title>{sayac} kere tikladin</title>  //? bu kisim basit olarak title'da yazmak icin.biz title ulasmamiz lazim..ama dom ile ulasabilirim.
       <h2>{sayac} kere tikladin</h2>
       <button onClick={artir}>TIKLA</button>
     </div>

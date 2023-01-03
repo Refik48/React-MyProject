@@ -1,5 +1,7 @@
 import React from "react";
-import Clock3 from "./components/clock3/Clock3";
+import UserCards from "./components/usercards/UserCards";
+// import Clock3 from "./components/clock3/Clock3";
+// import ChangeTitle from "./components/useeffect/ChangeTitle";
 // import Birthday from "./components/birthday/Birthday";
 // import Counter from "./components/counter/Counter";
 // import BSClassic from "./components/boostrap-classic/BSClassic";
@@ -67,8 +69,17 @@ function App() {
 <Counter/>
 
 <Birthday/>
-*/}
+
       <Clock3 />
+      
+<ChangeTitle/>
+*/}
+
+    <UserCards/>  
+
+
+
+
     </div>
   );
 }
