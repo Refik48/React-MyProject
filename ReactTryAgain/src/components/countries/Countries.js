@@ -4,20 +4,27 @@ import { Container, Table, Image, Spinner } from "react-bootstrap";
 function Countries() {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [shortType, setShortType] = useState(false);
 
-  const sirala = () => {
+  const sirala = (key) => {
     countries.sort((a, b) => {
-      let valueA = a.name;
-      let valueB = b.name;
+      let valueA = a[key] ? a[key] : ""; // degersiz ifadeleri kontrol ederek siralamanin duzgu olmasini sagladik.
+      let valueB = b[key] ? b[key] : "";
+
+      var result = 0;
+
       if (valueA < valueB) {
-        return 1;
+        result = 1;
       } else if (valueA > valueB) {
-        return -1;
-      } else {
-        return 0;
+        result = -1;
       }
+      if (shortType) result *= -1;
+      setShortType(!shortType); // Burada ! ile tersini aliyoruz
+      return result;
     });
     setCountries([...countries]); // spreed operatoru kullandik. referans type ve value type karsilastirmasini ogren
+    //*spread operatoru, dizileri dizi olmaktan cikarir, bastaki (...) diziyi dagitir. Bizim koydugumuz [] de yeniden dizi haline getirmis oldu. (Shallow Copy=> [...countries])
+    //! [...countries] bu isleme shallow copy denir.   mevcut bir diziyi alıp yeni dizi haline getirme: shallow copy
   };
   useEffect(() => {
     setLoading(true);
@@ -36,6 +43,7 @@ function Countries() {
 
   return (
     <Container className="mt-5">
+      <h1 className="text-center">ÜLKELER</h1>
       <Table striped bordered hover>
         <Spinner
           animation="border"
@@ -46,18 +54,27 @@ function Countries() {
           <tr>
             <th>#</th>
             <th>Flag</th>
+            {/* burada arrow functiun kullanmamizin sebebi tiklandiginda
+            //calismasi yoksa sirala() seklinde yazarsak onclick'i beklemeden
+            //calisir */}
             <th>
-              <span onclick={sirala}>Country</span>{" "}
+              <span onClick={() => sirala("name")}>Country</span>
             </th>
-            <th>Capital</th>
-            <th>Popilation</th>
-            <th>Area</th>
+            <th>
+              <span onClick={() => sirala("capital")}>Capital</span>
+            </th>
+            <th>
+              <span onClick={() => sirala("population")}>population</span>
+            </th>
+            <th>
+              <span onClick={() => sirala("area")}>area</span>
+            </th>
           </tr>
         </thead>
         <tbody>
           {countries.map((country, index) => (
             <tr key={index}>
-              <td>{index}</td>
+              <td>{index + 1}</td>
               <td>
                 <Image
                   src={country.flag}
