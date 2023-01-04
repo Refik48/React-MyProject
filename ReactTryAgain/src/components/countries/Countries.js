@@ -3,9 +3,24 @@ import { Container, Table, Image, Spinner } from "react-bootstrap";
 
 function Countries() {
   const [countries, setCountries] = useState([]);
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const sirala = () => {
+    countries.sort((a, b) => {
+      let valueA = a.name;
+      let valueB = b.name;
+      if (valueA < valueB) {
+        return 1;
+      } else if (valueA > valueB) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+    setCountries([...countries]); // spreed operatoru kullandik. referans type ve value type karsilastirmasini ogren
+  };
   useEffect(() => {
-setLoading(true);
+    setLoading(true);
     fetch("https://restcountries.com/v2/all")
       .then((resp) => resp.json())
 
@@ -14,10 +29,9 @@ setLoading(true);
         setLoading(false);
       })
       .catch((err) => {
-       setLoading(false);
-       console.log(err)});
-
-     
+        setLoading(false);
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -32,7 +46,9 @@ setLoading(true);
           <tr>
             <th>#</th>
             <th>Flag</th>
-            <th>Country</th>
+            <th>
+              <span onclick={sirala}>Country</span>{" "}
+            </th>
             <th>Capital</th>
             <th>Popilation</th>
             <th>Area</th>
