@@ -1,5 +1,6 @@
 import React from "react";
-import Countries from "./components/countries/Countries";
+//import Countries from "./components/countries/Countries";
+import Posts from "./components/posts/Posts";
 //import UserCards from "./components/usercards/UserCards";
 // import Clock3 from "./components/clock3/Clock3";
 // import ChangeTitle from "./components/useeffect/ChangeTitle";
@@ -77,8 +78,10 @@ function App() {
 
 
     <UserCards/>  
-*/}
+
 <Countries/>
+*/}
+<Posts/>
     </div>
   );
 }
