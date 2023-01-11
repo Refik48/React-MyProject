@@ -13,7 +13,8 @@ const Posts = () => {
     };
     axios
       .post("https://jsonplaceholder.typicode.com/posts", yeniYazi)
-      .then((resp) => console.log(resp));
+      .then((resp) => {setPosts([...posts,yeniYazi]);
+      });
   };
 
   useEffect(() => {
