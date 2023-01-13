@@ -1,6 +1,7 @@
 import React from "react";
 //import Countries from "./components/countries/Countries";
-import Posts from "./components/posts/Posts";
+//import Posts from "./components/posts/Posts";
+import RandomImages from "./components/randomImages/RandomImages";
 //import UserCards from "./components/usercards/UserCards";
 // import Clock3 from "./components/clock3/Clock3";
 // import ChangeTitle from "./components/useeffect/ChangeTitle";
@@ -21,8 +22,8 @@ import Posts from "./components/posts/Posts";
 // import InternalStyle from "./components/style/InternalStyle";
 
 function App() {
-  const avatarUrl =
-    "https://images.unsplash.com/photo-1668210039927-82341df16e20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
+  // const avatarUrl =
+  //   "https://images.unsplash.com/photo-1668210039927-82341df16e20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
   return (
     <div className="App">
       {/* Merhaba Dunya
@@ -80,8 +81,10 @@ function App() {
     <UserCards/>  
 
 <Countries/>
-*/}
+
 <Posts/>
+*/}
+<RandomImages/>
     </div>
   );
 }
