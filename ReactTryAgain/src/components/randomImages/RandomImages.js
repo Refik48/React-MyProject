@@ -21,7 +21,7 @@ const RandomImages = () => {
 
         <Card.Body>
           <Button variant="primary" onClick={sayiUret}>
-            Change
+            Change {sayi}
           </Button>
         </Card.Body>
       </Card>

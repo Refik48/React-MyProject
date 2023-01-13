@@ -1,7 +1,8 @@
 import React from "react";
+import Form1 from "./components/forms/Form1";
 //import Countries from "./components/countries/Countries";
 //import Posts from "./components/posts/Posts";
-import RandomImages from "./components/randomImages/RandomImages";
+//import RandomImages from "./components/randomImages/RandomImages";
 //import UserCards from "./components/usercards/UserCards";
 // import Clock3 from "./components/clock3/Clock3";
 // import ChangeTitle from "./components/useeffect/ChangeTitle";
@@ -83,8 +84,10 @@ function App() {
 <Countries/>
 
 <Posts/>
-*/}
+
 <RandomImages/>
+*/}
+<Form1/>
     </div>
   );
 }
