@@ -1,5 +1,6 @@
 import React from "react";
-import Form1 from "./components/forms/Form1";
+//import Form1 from "./components/forms/Form1";
+import Form2 from "./components/forms/Form2";
 //import Countries from "./components/countries/Countries";
 //import Posts from "./components/posts/Posts";
 //import RandomImages from "./components/randomImages/RandomImages";
@@ -57,37 +58,25 @@ function App() {
           shot="43"
           followers="123"
           following="4545"
-        />
-        
+        />  
       </div>
-
-
 <BSClassic/>
-
 <BSReact/>
-
 <Shop/>
-
 <State/>
-
 <Counter/>
-
 <Birthday/>
-
-      <Clock3 />
-      
+   <Clock3 />
+    
 <ChangeTitle/>
-
-
     <UserCards/>  
-
 <Countries/>
-
 <Posts/>
-
 <RandomImages/>
-*/}
+
 <Form1/>
+*/}
+      <Form2 />
     </div>
   );
 }
