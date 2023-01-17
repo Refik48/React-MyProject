@@ -1,6 +1,7 @@
 import React from "react";
 //import Form1 from "./components/forms/Form1";
-import Form2 from "./components/forms/Form2";
+//import Form2 from "./components/forms/Form2";
+import Form3 from "./components/forms/Form3";
 //import Countries from "./components/countries/Countries";
 //import Posts from "./components/posts/Posts";
 //import RandomImages from "./components/randomImages/RandomImages";
@@ -75,8 +76,10 @@ function App() {
 <RandomImages/>
 
 <Form1/>
-*/}
+
       <Form2 />
+      */}
+      <Form3/>
     </div>
   );
 }
